@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Excel Mapper</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        button {
+            margin: 10px 0;
+            padding: 10px;
+            font-size: 16px;
+        }
+
+        #status {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Excel Mapper</h1>
+    <button id="selectInput">Select Input File</button>
+    <button id="selectTemplate">Select Template File</button>
+    <button id="selectOutput">Select Output Folder</button>
+    <button id="processExcel">Execute</button>
+    <div id="status"></div>
+    <div id="inputFilePathSelected"></div>
+    <div id="templateFilePathSelected"></div>
+    <div id="outputPathSelected"></div>
+    <script src="renderer.js"></script>
+</body>
+
+</html>
