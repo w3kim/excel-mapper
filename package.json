@@ -4,13 +4,16 @@
   "description": "",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "build:win": "electron-packager . excel-mapper --platform=win32 --arch=x64 --out=release-build --overwrite",
+    "build:mac": "electron-packager . excel-mapper --platform=darwin --arch=arm64 --out=release-build --overwrite"
   },
   "keywords": [],
   "author": "Eric Kim",
   "license": "ISC",
   "devDependencies": {
-    "electron": "^31.0.2"
+    "electron": "^31.0.2",
+    "electron-packager": "^17.1.2"
   },
   "dependencies": {
     "xlsx-populate": "^1.21.0"
